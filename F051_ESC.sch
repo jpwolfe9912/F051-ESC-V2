@@ -48,10 +48,6 @@ Wire Wire Line
 	4450 4300 4050 4300
 Wire Wire Line
 	4050 4400 4450 4400
-Wire Wire Line
-	4050 4650 4250 4650
-Wire Wire Line
-	4050 4750 4150 4750
 $Comp
 L power:GND #PWR0114
 U 1 1 603C17D6
@@ -148,29 +144,6 @@ F 3 "~" H 6150 5350 50  0001 C CNN
 	1    6150 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4350 4550 4350 5250
-Wire Wire Line
-	4350 5250 5950 5250
-Connection ~ 4350 4550
-Wire Wire Line
-	4350 4550 4450 4550
-Wire Wire Line
-	4250 5350 5950 5350
-Wire Wire Line
-	5950 5450 4150 5450
-Wire Wire Line
-	4050 4550 4350 4550
-Wire Wire Line
-	4250 4650 4250 5350
-Connection ~ 4250 4650
-Wire Wire Line
-	4250 4650 4450 4650
-Wire Wire Line
-	4150 4750 4150 5450
-Connection ~ 4150 4750
-Wire Wire Line
-	4150 4750 4450 4750
 $Comp
 L Device:C_Small C16
 U 1 1 603953BF
@@ -317,17 +290,6 @@ F14 "NRST" I R 5400 4450 50
 F15 "USART1_TX" I R 5400 4750 50 
 F16 "USART1_RX" I R 5400 4650 50 
 $EndSheet
-$Comp
-L Connector_Generic:Conn_01x01 J5
-U 1 1 603DA1F9
-P 8100 4450
-F 0 "J5" H 8180 4492 50  0000 L CNN
-F 1 "Conn_01x01" H 8180 4401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8100 4450 50  0001 C CNN
-F 3 "~" H 8100 4450 50  0001 C CNN
-	1    8100 4450
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	8750 3500 7100 3500
 Wire Notes Line
@@ -421,19 +383,6 @@ Wire Wire Line
 Wire Wire Line
 	7900 4300 5400 4300
 Wire Wire Line
-	5400 4450 7900 4450
-$Comp
-L Connector_Generic:Conn_01x02 J6
-U 1 1 604C1457
-P 8100 5000
-F 0 "J6" H 8180 4992 50  0000 L CNN
-F 1 "Conn_01x02" H 8180 4901 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8100 5000 50  0001 C CNN
-F 3 "~" H 8100 5000 50  0001 C CNN
-	1    8100 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	6950 4650 6950 5000
 Wire Wire Line
 	6950 5000 7900 5000
@@ -445,4 +394,48 @@ Wire Wire Line
 	6850 4750 5400 4750
 Wire Wire Line
 	5400 4650 6950 4650
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 6051CE43
+P 8100 5000
+F 0 "J6" H 8180 5042 50  0000 L CNN
+F 1 "Conn_01x03" H 8180 4951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8100 5000 50  0001 C CNN
+F 3 "~" H 8100 5000 50  0001 C CNN
+	1    8100 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4450 7050 4450
+Wire Wire Line
+	7050 4450 7050 4900
+Wire Wire Line
+	7050 4900 7900 4900
+Wire Wire Line
+	4050 4750 4350 4750
+Wire Wire Line
+	4050 4550 4150 4550
+Wire Wire Line
+	4050 4650 4250 4650
+Wire Wire Line
+	4150 4550 4150 5450
+Wire Wire Line
+	4150 5450 5950 5450
+Connection ~ 4150 4550
+Wire Wire Line
+	4150 4550 4450 4550
+Wire Wire Line
+	5950 5350 4250 5350
+Wire Wire Line
+	4250 5350 4250 4650
+Connection ~ 4250 4650
+Wire Wire Line
+	4250 4650 4450 4650
+Wire Wire Line
+	4350 4750 4350 5250
+Wire Wire Line
+	4350 5250 5950 5250
+Connection ~ 4350 4750
+Wire Wire Line
+	4350 4750 4450 4750
 $EndSCHEMATC
